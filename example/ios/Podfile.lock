@@ -1,0 +1,22 @@
+PODS:
+  - Flutter (1.0.0)
+  - ke_flutter_webview (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `.symlinks/flutter/ios`)
+  - ke_flutter_webview (from `.symlinks/plugins/ke_flutter_webview/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: ".symlinks/flutter/ios"
+  ke_flutter_webview:
+    :path: ".symlinks/plugins/ke_flutter_webview/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 58dd7d1b27887414a370fcccb9e645c08ffd7a6a
+  ke_flutter_webview: 1ae1606ac606f821ee48e8d494ebc61aa434f9e2
+
+PODFILE CHECKSUM: ebd43b443038e611b86ede96e613bd6033c49497
+
+COCOAPODS: 1.6.1
