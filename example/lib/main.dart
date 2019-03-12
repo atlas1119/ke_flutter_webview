@@ -37,7 +37,10 @@ class _MyAppState extends State<MyApp> {
             padding: EdgeInsets.all(20.0),
             child: Text("测试webview"),
           ),
-          
+          Container( 
+        padding: EdgeInsets.all(10.0),
+        child: progress < 1.0 ? LinearProgressIndicator(value: progress) : null
+      ),
           Expanded(
         child: Container(
           margin: const EdgeInsets.all(10.0),
