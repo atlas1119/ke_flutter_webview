@@ -29,13 +29,13 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(home: Scaffold(
       appBar: CupertinoNavigationBar(
-        middle: Text("测试111"),
+        middle: Text("测试"),
       ),
       body: Container(
         child: Column(children: <Widget>[
           Container(
             padding: EdgeInsets.all(20.0),
-            child: Text("测试webvie1111w"),
+            child: Text("测试webview"),
           ),
           
           Expanded(
