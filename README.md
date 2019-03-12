@@ -31,3 +31,13 @@
 - onScrollChanged
 - gestureRecognizers
 
+
+## 更新日志
+```
+2019-03-12 v1.1
+更加文档接口，修改一个bug
+
+2019-03-10 v1.0
+第一个版本发布，增加android的一些实用接口
+
+```
