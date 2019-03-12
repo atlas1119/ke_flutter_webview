@@ -19,7 +19,7 @@ class WebViewController {
   KeFlutteWebView _widget;
   MethodChannel _channel;
   Map<String, List<JavaScriptHandlerCallback>> javaScriptHandlersMap = HashMap<String, List<JavaScriptHandlerCallback>>();
-  bool _isOpened = false;
+  // bool _isOpened = false;
   int _id;
 
   WebViewController(int id, KeFlutteWebView widget) {

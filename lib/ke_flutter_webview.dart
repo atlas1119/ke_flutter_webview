@@ -54,12 +54,9 @@ class KeFlutteWebView extends StatefulWidget{
 
   ///
   ///
-  ///**NOTE**: In order to be able to listen this event, you need to set `useShouldOverrideUrlLoading` option to `true`.
   final shouldOverrideUrlLoadingCallback shouldOverrideUrlLoading;
 
-  ///Event fires when the [WebView] scrolls.
-  ///[x] represents the current horizontal scroll origin in pixels.
-  ///[y] represents the current vertical scroll origin in pixels.
+  /// 滚动时触发 
   final onWebViewScrollChangedCallback onScrollChanged;
 
   /// url
