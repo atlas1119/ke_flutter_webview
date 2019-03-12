@@ -8,19 +8,19 @@
 - initialUrl    传入的url
 - initialHeaders  自定义headers
 - initialOptions  自定义选项，后面是默认值
-    --// useShouldOverrideUrlLoading = true;
-    --// useOnLoadResource = false;
-    --// clearCache = false;
-    --// userAgent = "";
-    --// javaScriptEnabled = true;
-    --// javaScriptCanOpenWindowsAutomatically = false;
-    --// clearSessionCache = false;
-    --// builtInZoomControls = false;
-    --// supportZoom = true;
-    --// databaseEnabled = false;
-    --// domStorageEnabled = false;
-    --// useWideViewPort = true;
-    --// safeBrowsingEnabled = true;
+    - useShouldOverrideUrlLoading = true;
+    - useOnLoadResource = false;
+    - clearCache = false;
+    - userAgent = "";
+    - javaScriptEnabled = true;
+    - javaScriptCanOpenWindowsAutomatically = false;
+    - clearSessionCache = false;
+    - builtInZoomControls = false;
+    - supportZoom = true;
+    - databaseEnabled = false;
+    - domStorageEnabled = false;
+    - useWideViewPort = true;
+    - safeBrowsingEnabled = true;
 
 - onWebViewCreated  view创建完后的callback
 - onLoadStart       开始加载时的callback
