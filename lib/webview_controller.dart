@@ -239,22 +239,14 @@ class WebViewController {
     await _channel.invokeMethod('injectStyleFile', args);
   }
 
-  ///Adds/Appends a JavaScript message handler [callback] ([JavaScriptHandlerCallback]) that listen to post messages sent from JavaScript by the handler with name [handlerName].
-  ///Returns the position `index` of the handler that can be used to remove it with the [removeJavaScriptHandler()] method.
-  ///
-  ///The Android implementation uses [addJavascriptInterface](https://developer.android.com/reference/android/webkit/WebView#addJavascriptInterface(java.lang.Object,%20java.lang.String)).
-  ///The iOS implementation uses [addScriptMessageHandler](https://developer.apple.com/documentation/webkit/wkusercontentcontroller/1537172-addscriptmessagehandler?language=objc)
-  ///
-  ///The JavaScript function that can be used to call the handler is `window.flutter_inappbrowser.callHandler(handlerName <String>, ...args);`, where `args` are [rest parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters).
-  ///The `args` will be stringified automatically using `JSON.stringify(args)` method and then they will be decoded on the Dart side.
+  // 功能待考虑
   int addJavaScriptHandler(String handlerName, JavaScriptHandlerCallback callback) {
     this.javaScriptHandlersMap.putIfAbsent(handlerName, () => List<JavaScriptHandlerCallback>());
     this.javaScriptHandlersMap[handlerName].add(callback);
     return this.javaScriptHandlersMap[handlerName].indexOf(callback);
   }
 
-  ///Removes a JavaScript message handler previously added with the [addJavaScriptHandler()] method in the [handlerName] list by its position [index].
-  ///Returns `true` if the callback is removed, otherwise `false`.
+  /// 和上面对应
   bool removeJavaScriptHandler(String handlerName, int index) {
     try {
       this.javaScriptHandlersMap[handlerName].removeAt(index);
@@ -266,16 +258,13 @@ class WebViewController {
     return false;
   }
 
-  ///Takes a screenshot (in PNG format) of the WebView's visible viewport and returns a `Uint8List`. Returns `null` if it wasn't be able to take it.
-  ///
-  ///**NOTE for iOS**: available from iOS 11.0+.
   Future<Uint8List> takeScreenshot() async {
     Map<String, dynamic> args = <String, dynamic>{};
 
     return await _channel.invokeMethod('takeScreenshot', args);
   }
 
-  ///Sets the [WebView] options with the new [options] and evaluates them.
+
   Future<void> setOptions(Map<String, dynamic> options) async {
     Map<String, dynamic> args = <String, dynamic>{};
 
